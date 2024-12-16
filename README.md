@@ -7,3 +7,4 @@ O módulo **intermediário** de Javascript, explora conceitos um pouco mais avan
 ## Tópicos:
 
 - Trabalhando com Objetos;
+- Trabalhando com Strings;
