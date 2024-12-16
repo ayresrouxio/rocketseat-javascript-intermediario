@@ -28,3 +28,17 @@ const user = {
     console.log("Oi Rodrigo")
   },
 }
+
+// Acessando propriedades e métodos usando notação de ponto.
+console.log(user.email)
+
+// Acessando propriedade de objetos.
+console.log(user.name.first_name)
+
+// Executa o método do objeto.
+user.message()
+
+// Notação de colchetes.
+console.log(user["email"])
+console.log(user["name"]["first_name"])
+user["message"]()
