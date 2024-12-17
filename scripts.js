@@ -1,14 +1,14 @@
-let message = "Estou estudando os fundamentos do Javascript."
+const creditCard = "1234567812344928"
+console.log(creditCard.length)
 
-// Substituindo parte de um texto.
-console.log(message.replace("Javascript", "HTML"))
+// pega os 4 últimos dígitos.
+const lastDigits = creditCard.slice(-4)
+console.log(lastDigits)
 
-// Extraindo uma parte da string (start, end).
-console.log(message.slice(6, 30))
+// O padStart preenche a string do início.
+const maskedNumber = lastDigits.padStart(creditCard.length, "X")
+console.log(maskedNumber)
 
-// Extraindo uma parte da string de trás para frente.
-console.log(message.slice(-11))
-
-// Remove espaços em branco no inicio e no final da string.
-let textWithSpace = "    Texto de exemplo     "
-console.log(textWithSpace.trim())
+// O padEnd preenche a string no final.
+const number = "123"
+console.log(number.padEnd(10, "*"))
