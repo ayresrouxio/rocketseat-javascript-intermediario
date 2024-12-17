@@ -9,3 +9,6 @@ O módulo **intermediário** de Javascript, explora conceitos um pouco mais avan
 - Trabalhando com Objetos;
 - Trabalhando com Strings;
 - Trabalhando com Arrays;
+- Repetição e Iteração;
+- Trabalhando com Data e Hora;
+- Classes;
