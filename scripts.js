@@ -1,13 +1,8 @@
-// While: executa até que a condição seja verdadeira.
+// Loop infinito
+let value = true
 
-let execute = true
-
-while (execute) {
-  let response = window.prompt("Deseja continuar: 1 (Sim) ou 2 (Não)")
-
-  if (response === "2") {
-    execute = false
-  }
+/*
+while (value) {
+  console.log("Executando while...");
 }
-
-console.log("Segue o fluxo")
+*/
