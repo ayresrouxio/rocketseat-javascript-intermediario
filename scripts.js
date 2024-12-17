@@ -1,4 +1,7 @@
-const dateWithTimezone = new Date("2024-12-17T10:55:41.134-03:00")
+class Person {
+  constructor(name) {
+    console.log("Olá", name)
+  }
+}
 
-console.log(new Date().toLocaleString("pt-BR"))
-console.log(dateWithTimezone.toLocaleString("pt-BR"))
+const person = new Person("Rodrigo")
