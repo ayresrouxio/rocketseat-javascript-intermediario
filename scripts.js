@@ -1,14 +1,12 @@
-const creditCard = "1234567812344928"
-console.log(creditCard.length)
+let text = "Estudar, Aprender, Praticar"
 
-// pega os 4 últimos dígitos.
-const lastDigits = creditCard.slice(-4)
-console.log(lastDigits)
+// Separar a String.
+let separate = text.split(",")
+console.log(separate)
 
-// O padStart preenche a string do início.
-const maskedNumber = lastDigits.padStart(creditCard.length, "X")
-console.log(maskedNumber)
+let message = "Estou aprendendo Javascript"
+console.log(message.split(" "))
 
-// O padEnd preenche a string no final.
-const number = "123"
-console.log(number.padEnd(10, "*"))
+// Unir a String.
+let joined = separate.join(" - ")
+console.log(joined)
