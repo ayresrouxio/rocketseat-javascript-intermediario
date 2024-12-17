@@ -1,18 +1,21 @@
-/*
-  For repete até que a condição especificada seja falsa.
+// for ... in executa iterações a partir de um objeto e percorre as propriedades.
 
-  - Variável de controle
-  - Condição
-  - Incremento ou decremento da variável de controle
-*/
-
-for (let step = 0; step < 10; step++) {
-  console.log(step)
+let person = {
+  name: "Rodrigo",
+  surname: "Gonçalves",
+  email: "rodrigo@email.com",
 }
 
-// Exemplo de tabuada
-let number = 7
+for (let property in person) {
+  // Exibe o nome da propriedade.
+  console.log(property)
 
-for (let i = 1; i <= 10; i++) {
-  console.log(`${number} x ${i} = ${number * i}`)
+  // Exibe o conteúdo da propriedade.
+  console.log(person[property])
+}
+
+let students = ["Rodrigo", "João", "Amanda"]
+
+for (let index in students) {
+  console.log(students[index])
 }
