@@ -1,12 +1,8 @@
-// Cria o Array.
-let fruits = ["Apple", "Banana", "Orange"]
-console.log(fruits)
+let fullName = "Rodrigo Gonçalves Santana"
+console.log(fullName)
 
-// Acessa o item pelo índice.
-console.log(fruits[1])
+// Cria um Array com os nomes separando pelo espaço.
+console.log(fullName.split(" "))
 
-// Tenta acessar um índice que não existe. (retorna undefined)
-console.log(fruits[7])
-
-// Obtém dinamicamente o último item.
-console.log(fruits[fruits.length - 1])
+// Cria um Array com as letras.
+console.log(Array.from(fullName))
