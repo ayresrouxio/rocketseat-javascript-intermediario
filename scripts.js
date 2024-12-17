@@ -1,8 +1,18 @@
-let fullName = "Rodrigo Gonçalves Santana"
-console.log(fullName)
+let users = []
+console.log(users)
 
-// Cria um Array com os nomes separando pelo espaço.
-console.log(fullName.split(" "))
+// Adiciona um item no final do Array.
+users.push("Rodrigo")
+users.push("João")
+users.push("Marcos")
 
-// Cria um Array com as letras.
-console.log(Array.from(fullName))
+// Adiciona um item no inicio do Array.
+users.unshift("Ana")
+
+// Remove do início do Array.
+users.shift()
+
+// Remove do final do Array.
+users.pop()
+
+console.log(users)
