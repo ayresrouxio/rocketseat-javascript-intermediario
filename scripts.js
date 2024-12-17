@@ -1,21 +1,15 @@
-let date = new Date("July 3, 2024 14:30:00")
+let date = new Date("2024-07-02T14:30:00")
 
-// Modificar o ano.
-date.setFullYear(2030)
+// Formata para o dia sempre ter 2 dígitos.
+let day = date.getDate().toString().padStart(2, "0")
+console.log(day)
 
-// Modificar o mês.
-date.setMonth(7)
+// Formata para o mês sempre ter 2 dígitos.
+let month = (date.getMonth() + 1).toString().padStart(2, "0")
+console.log(month)
 
-// Modificar o dia.
-date.setDate(10)
+let year = date.getFullYear()
+let hours = date.getHours()
+let minutes = date.getMinutes()
 
-// Modificar a hora.
-date.setHours(18)
-
-// Modificar o minuto.
-date.setMinutes(15)
-
-// Modificar o segundo.
-date.setSeconds(30)
-
-console.log(date)
+console.log(`${day}/${month}/${year} às ${hours}:${minutes}`)
