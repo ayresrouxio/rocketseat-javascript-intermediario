@@ -1,12 +1,13 @@
-let text = "Estudar, Aprender, Praticar"
+let message = "Estou estudando os fundamentos do Javascript"
 
-// Separar a String.
-let separate = text.split(",")
-console.log(separate)
+// Obtém a posição da palavra.
+console.log(message.indexOf("Javascript"))
 
-let message = "Estou aprendendo Javascript"
-console.log(message.split(" "))
+// Quando não encontra retorna -1
+console.log(message.indexOf("javascript"))
 
-// Unir a String.
-let joined = separate.join(" - ")
-console.log(joined)
+// Verifica se existe a palavra na String.
+console.log(message.includes("Javascript"))
+console.log(message.toLowerCase().includes("javascript"))
+
+console.log(message.includes("html"))
