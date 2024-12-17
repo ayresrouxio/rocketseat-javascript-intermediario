@@ -1,12 +1,16 @@
-const address = {
-  city: "São Paulo",
-  country: "Brazil",
+class MyCustomError {
+  constructor(message) {
+    this.message = "Classe de Erro Customizada: " + message
+  }
 }
 
-console.log(address)
-
-const users = ["Rodrigo", "João", "Maria"]
-console.log(users)
-
-const userName = "Rodrigo Gonçalves"
-console.log(userName.__proto__)
+try {
+  throw new Error("Erro genérico")
+  throw new MyCustomError("Erro personalizado lançado")
+} catch (error) {
+  if (error instanceof MyCustomError) {
+    console.log(error.message)
+  } else {
+    console.log("Não foi possível executar!")
+  }
+}
