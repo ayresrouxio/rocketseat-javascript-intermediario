@@ -1,10 +1,27 @@
-let fruits = ["Apple", "Watermelon", "Lemon", "Strawberry"]
-console.log(fruits)
+let myArray = [
+  "Um texto",
+  10,
+  true,
+  function () {
+    console.log("Função dentro do array")
+  },
+  {
+    name: "Rodrigo",
+    email: "rodrigo@email.com",
+  },
+]
 
-// Encontra e retorna o índice do elemento no Array.
-let position = fruits.indexOf("Lemon")
-console.log(position)
+// Texto.
+console.log(myArray[0])
 
-// Remove um item pela posição do índice (1 é o número de itens para remover).
-fruits.splice(position, 1)
-console.log(fruits)
+// Número.
+console.log(myArray[1])
+
+// Boolean.
+console.log(myArray[2])
+
+// Função.
+myArray[3]()
+
+// Objeto.
+console.log(myArray[4].name)
