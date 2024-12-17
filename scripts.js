@@ -9,11 +9,19 @@ class Animal {
 }
 
 class Dog extends Animal {
-  // Empty
+  makeNoise() {
+    console.log("Woof! Woof! Woof!")
+  }
 }
 
 class Cat extends Animal {
-  // Empty
+  makeNoise() {
+    console.log("Miau... Miau... Miau...")
+  }
+
+  run() {
+    console.log("Correndo...")
+  }
 }
 
 const dog = new Dog("Bento")
@@ -21,3 +29,4 @@ dog.makeNoise()
 
 const cat = new Cat("Mili")
 cat.makeNoise()
+cat.run()
