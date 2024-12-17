@@ -1,21 +1,6 @@
-// for ... in executa iterações a partir de um objeto e percorre as propriedades.
+// for ... of itera sobre valores de um objeto iterável.
+let students = ["Rodrigo", "Amanda", "John"]
 
-let person = {
-  name: "Rodrigo",
-  surname: "Gonçalves",
-  email: "rodrigo@email.com",
-}
-
-for (let property in person) {
-  // Exibe o nome da propriedade.
-  console.log(property)
-
-  // Exibe o conteúdo da propriedade.
-  console.log(person[property])
-}
-
-let students = ["Rodrigo", "João", "Amanda"]
-
-for (let index in students) {
-  console.log(students[index])
+for (let student of students) {
+  console.log(student)
 }
