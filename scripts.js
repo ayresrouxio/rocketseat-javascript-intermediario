@@ -1,10 +1,11 @@
-let date = new Date("2024-07-02T14:30:00")
+let date = new Date("2024-07-02T14:30:15")
 
-// Simplesmente converte para String.
-console.log(date.toString())
+// Exibe a data e hora no formato local.
+console.log(date.toLocaleDateString())
+console.log(date.toLocaleTimeString())
+console.log(date.toLocaleString())
 
-// Retorna somente a data.
-console.log(date.toDateString())
-
-// Retorna somente a hora.
-console.log(date.toTimeString())
+// Exibe a data e hora no formato escolhido.
+console.log(date.toLocaleDateString("pt-BR"))
+console.log(date.toLocaleTimeString("pt-BR"))
+console.log(date.toLocaleString("pt-BR"))
