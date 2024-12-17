@@ -1,13 +1,12 @@
 class User {
-  constructor(name, email) {
-    this.name = name
-    this.email = email
-  }
-
-  sendEmail() {
-    console.log("E-mail enviado para:", this.name, this.email)
+  static showMessage(message) {
+    console.log(message)
   }
 }
 
-const user = new User("Rodrigo", "rodrigo@email.com")
-user.sendEmail()
+/*
+const user = new User()
+user.showMessage()
+*/
+
+User.showMessage("Hello World!")
