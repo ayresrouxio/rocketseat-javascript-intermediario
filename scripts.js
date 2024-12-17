@@ -1,12 +1,23 @@
-class User {
-  static showMessage(message) {
-    console.log(message)
+class Animal {
+  constructor(name) {
+    this.name = name
+  }
+
+  makeNoise() {
+    console.log("Algum som genérico")
   }
 }
 
-/*
-const user = new User()
-user.showMessage()
-*/
+class Dog extends Animal {
+  // Empty
+}
 
-User.showMessage("Hello World!")
+class Cat extends Animal {
+  // Empty
+}
+
+const dog = new Dog("Bento")
+dog.makeNoise()
+
+const cat = new Cat("Mili")
+cat.makeNoise()
