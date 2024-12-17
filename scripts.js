@@ -1,14 +1,12 @@
-// Criando Array com construtor.
-const newArray = new Array()
-console.log(newArray)
+// Cria o Array.
+let fruits = ["Apple", "Banana", "Orange"]
+console.log(fruits)
 
-// Retorna o tamanho do Array.
-console.log(newArray.length)
+// Acessa o item pelo índice.
+console.log(fruits[1])
 
-// [] - Array
-// {} - Objeto
+// Tenta acessar um índice que não existe. (retorna undefined)
+console.log(fruits[7])
 
-// Cria o Array com 10 posições vazias.
-const available = new Array(10)
-console.log(available)
-console.log(available.length)
+// Obtém dinamicamente o último item.
+console.log(fruits[fruits.length - 1])
