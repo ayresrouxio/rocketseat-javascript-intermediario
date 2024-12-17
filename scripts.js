@@ -1,45 +1,18 @@
-let date = new Date("2024-07-02T14:30:10")
+// Intl é a API de internacionalização do ECMAScript.
 
-console.log(date.toLocaleString())
+// Obtém informações da localidade.
+const currentLocale = Intl.DateTimeFormat().resolvedOptions()
 
-// Exibe data e hora em styles diferentes.
-console.log(
-  date.toLocaleString("pt-BR", {
-    dateStyle: "short",
-  })
-)
+console.log(currentLocale)
 
-console.log(
-  date.toLocaleString("pt-BR", {
-    dateStyle: "long",
-  })
-)
+// Exibe no formato de acordo com a localidade.
+console.log(new Intl.DateTimeFormat("pt-BR").format(new Date()))
+console.log(new Intl.DateTimeFormat("en-US").format(new Date()))
 
-console.log(
-  date.toLocaleString("pt-BR", {
-    dateStyle: "medium",
-  })
-)
+const date = new Date()
 
-console.log(
-  date.toLocaleString("pt-BR", {
-    dateStyle: "full",
-  })
-)
+// Obtém a diferença em minutos do timezone.
+console.log(date.getTimezoneOffset())
 
-console.log(
-  date.toLocaleString("pt-BR", {
-    day: "2-digit",
-    month: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-  })
-)
-
-const amount = 1223.5
-console.log(
-  amount.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  })
-)
+// Obtém a diferença em horas do timezone.
+console.log(date.getTimezoneOffset() / 60)
