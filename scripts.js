@@ -1,13 +1,14 @@
-let message = "Estou estudando os fundamentos do Javascript"
+// Criando Array com construtor.
+const newArray = new Array()
+console.log(newArray)
 
-// Obtém a posição da palavra.
-console.log(message.indexOf("Javascript"))
+// Retorna o tamanho do Array.
+console.log(newArray.length)
 
-// Quando não encontra retorna -1
-console.log(message.indexOf("javascript"))
+// [] - Array
+// {} - Objeto
 
-// Verifica se existe a palavra na String.
-console.log(message.includes("Javascript"))
-console.log(message.toLowerCase().includes("javascript"))
-
-console.log(message.includes("html"))
+// Cria o Array com 10 posições vazias.
+const available = new Array(10)
+console.log(available)
+console.log(available.length)
