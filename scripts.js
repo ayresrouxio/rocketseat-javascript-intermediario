@@ -1,10 +1,18 @@
-// Do While: repete até que a condição especificada seja verdadeira. No entanto, a instrução será executada pelo menos uma vez antes da condição ser verificada.
+/*
+  For repete até que a condição especificada seja falsa.
 
-let value = 0
+  - Variável de controle
+  - Condição
+  - Incremento ou decremento da variável de controle
+*/
 
-do {
-  value++
-  console.log(value)
-} while (value < 10)
+for (let step = 0; step < 10; step++) {
+  console.log(step)
+}
 
-console.log("Segue fluxo...")
+// Exemplo de tabuada
+let number = 7
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`${number} x ${i} = ${number * i}`)
+}
